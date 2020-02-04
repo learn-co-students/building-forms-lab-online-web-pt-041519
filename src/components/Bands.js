@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import uuid from 'uuid';
 
 export default class Bands extends Component {
     render() {
@@ -6,7 +7,7 @@ export default class Bands extends Component {
         return (
             <div>
                 <ul>
-                    {allBands.map(band => <li key="band ">{band.name}</li>)}
+                    {allBands.map(band => <li key={uuid()}>{band.name}</li>)}
                 </ul>
             </div>
         )
