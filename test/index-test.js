@@ -84,8 +84,9 @@ describe('Redux', () => {
     expect(store.getState().bands, "Initial state of 'bands' should be an empty array").to.be.empty
 
     input.simulate('change', { target: { value: 'Hello' } })
-    form.simulate('submit',  { preventDefault() {} })
 
+    form.simulate('submit',  { preventDefault() {} })
+    
     expect(store.getState().bands[0].name).to.equal("Hello")
 
   });
