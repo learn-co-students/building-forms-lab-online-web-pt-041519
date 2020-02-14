@@ -19,7 +19,9 @@ class BandInput extends Component {
     event.preventDefault()
     const band = {...this.state}
     // pass band object to action creator
+    // debugger
     this.props.addBand(band)
+
      // Update component state to return to default state
      this.setState = {
        name: ""
