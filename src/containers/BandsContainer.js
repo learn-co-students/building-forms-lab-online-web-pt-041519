@@ -15,7 +15,7 @@ class BandsContainer extends Component {
 }
 
 const mapStateToProps = ({ bands }) => ({ bands })
-console.log(bands)
+
 const mapDispatchToProps = dispatch => ({
   addBand: band => dispatch({type: 'ADD_BAND', band})
 })
